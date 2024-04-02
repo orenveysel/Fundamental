@@ -263,7 +263,7 @@
             * if'ten farki indexlemesi ve dallara daha hizli erismesini saglar. Daha performanslidir.
             * Eger Aylarin kontrolu  gibi birden cok kontrol yapilacaksa switch case ifade kulanilmasi uygundur.
             * */
-
+            /*
             Console.WriteLine("Ayin Numarasini giriniz");
             var giris = Console.ReadLine();
             int ay = int.Parse(giris);
@@ -361,7 +361,7 @@
                     Console.WriteLine("Girilen Deger Aralik Disidir");
                     break;
             }
-
+            */
             #region Odev
             /*
             * Hesaplama Uygulamasina Hosgeldiniz
@@ -369,14 +369,48 @@
             * 2-Cikarma
             * 3-Çarpma
             * 4-Bölme
-            * Lutfen yapmak istediginiz ilemi seciniz:2
+            * Lutfen yapmak istediginiz islemi seciniz:2
             * 1. Sayiyi giriniz: 5
             * 2. Sayiyi Giriniz :3
             * Sonuc = 5-2 =3
             */
+            /*
+            Console.WriteLine(@"Hesaplama Uygulamasine Hosgeldiniz!
+1- Toplama
+2- Cikarma
+3- Çarpma
+4- Bölme"
+);
+            Console.WriteLine("Lutfen yapmak istediginiz islemi seciniz: ");
+            int islem = int.Parse(Console.ReadLine());
+            Console.WriteLine("1. Sayiyi giriniz: ");
+            int sayi1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("2. Sayiyi giriniz: ");
+            decimal sayi2 = int.Parse(Console.ReadLine());
+
+            switch (islem)
+            {
+                case 1:
+                    Console.WriteLine("Sonuc = " + (sayi1 + sayi2));
+                    break;
+                case 2:
+                    Console.WriteLine("Sonuc = " + (sayi1 - sayi2));
+                    break;
+                case 3:
+                    Console.WriteLine("Sonuc = " + (sayi1 * sayi2));
+                    break;
+                case 4:
+                    Console.WriteLine("Sonuc = " + (sayi1 / sayi2));
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid Value");
+                    break;
+            }
+            */
             #endregion
 
-        #endregion
+            #endregion
 
         }
     }
