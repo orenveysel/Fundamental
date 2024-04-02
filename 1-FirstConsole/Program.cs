@@ -237,8 +237,27 @@
             */
             #endregion
 
+            //------------------------------------------------------------------------------------------------------------------
 
-            
+            #region Bir siniftaki ogrencinin ozelliklerini temsilen degisken tanimlamalarini yapiniz
+
+            //string ad, soyad, gsm, email;
+            //DateTime dogumTarihi;
+            //long tcNo = 12345678901;
+            //string tcNoStr = "12345678901";
+            //bool cinsiyet;
+
+            //Console.WriteLine("Adınızı giriniz: ");
+            //ad = Console.ReadLine();
+            //Console.WriteLine("Soyadınızı giriniz: ");
+            //soyad = Console.ReadLine();
+            //Console.WriteLine("Tc kimlik numaranızı giriniz: ");
+            //tcNo = Console.ReadLine();
+
+            //Console.WriteLine("Bilgileri girilen kişinin adı: " + ad + ", soyadı: " + soyad + ", Tc kimlik numarası: " + tcNo);
+            //Console.ReadLine();
+
+            #endregion
         }
     }
 }
