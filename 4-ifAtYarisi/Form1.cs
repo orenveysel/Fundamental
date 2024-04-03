@@ -18,14 +18,17 @@ namespace _4_ifAtYarisi
             InitializeComponent();
         }
 
+        // Yarisi sifirlama
         private void button1_Click(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
+        
         private void button2_Click(object sender, EventArgs e)
         {
-
+            at1.Left = at2.Left = at3.Left = 9;
+            lblDurum.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -54,6 +57,24 @@ namespace _4_ifAtYarisi
             {
                 lblDurum.Text = $"At3 onde gidiyor, X Konumu: {at3.Left.ToString()} + Y Konumu: {at3.Right}";
             }
+            #endregion
+
+            #region Kazanan At
+            if (at1.Left + at1.Width >= lblFinish.Left)
+            {
+                timer1.Stop();
+                MessageBox.Show("Birinci At Kazandi");
+            }
+            else if (at2.Left + at2.Width >= lblFinish.Left)
+            {
+                timer1.Stop();
+                MessageBox.Show("İkinci At Kazandi");
+            }
+            else if (at3.Left + at3.Width >= lblFinish.Left)
+            {
+                timer1.Stop();
+                MessageBox.Show("Ucuncu At Kazandi");
+            } 
             #endregion
         }
     }
