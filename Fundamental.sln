@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-FirstConsole", "1-FirstConsole\1-FirstConsole.csproj", "{F093E4F9-D041-4393-88F1-D3846BC96180}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-IfAndSwitchCase", "2-IfAndSwitchCase\2-IfAndSwitchCase.csproj", "{F0D8C569-03AC-4668-A50D-3C83C63AA5B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-IfAndSwitchCase", "2-IfAndSwitchCase\2-IfAndSwitchCase.csproj", "{F0D8C569-03AC-4668-A50D-3C83C63AA5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-TipDonusumleri", "TipDonusumleri\3-TipDonusumleri.csproj", "{D4736051-8C94-40DD-BF44-AA7F48D19A29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F0D8C569-03AC-4668-A50D-3C83C63AA5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0D8C569-03AC-4668-A50D-3C83C63AA5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0D8C569-03AC-4668-A50D-3C83C63AA5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4736051-8C94-40DD-BF44-AA7F48D19A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4736051-8C94-40DD-BF44-AA7F48D19A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4736051-8C94-40DD-BF44-AA7F48D19A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4736051-8C94-40DD-BF44-AA7F48D19A29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
