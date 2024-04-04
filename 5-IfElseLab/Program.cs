@@ -16,7 +16,7 @@ namespace _5_IfElseLab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SayiTahmin());
+            Application.Run(new FormLab());
         }
     }
 }
