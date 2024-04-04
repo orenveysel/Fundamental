@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="SayiTahmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SayiTahmin.Designer.cs">
+      <DependentUpon>SayiTahmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="TernaryIf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SayiTahmin.resx">
+      <DependentUpon>SayiTahmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TernaryIf.resx">
       <DependentUpon>TernaryIf.cs</DependentUpon>
     </EmbeddedResource>
