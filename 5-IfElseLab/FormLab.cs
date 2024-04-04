@@ -33,7 +33,7 @@ namespace _5_IfElseLab
             int sayi;
             bool durum = int.TryParse(girdi.Text, out sayi);
             // Eger girilen textbox icerisindeki deger integer'a cevirildi mi kontrolu
-            if (durum) // true
+            if (durum && sayi >= 0 && sayi <= 24) // true
             {
                 if(sayi>=4 && sayi<11)
                 {
@@ -58,7 +58,7 @@ namespace _5_IfElseLab
             }
             else
             {
-                lblMesaj.Text = "Hatalı veri girişi! Lütfen sayı giriniz.";
+                lblMesaj.Text = "Hatalı veri girişi! Lütfen 0-24 aralığında bir sayı giriniz.";
                 girdi.Text = "";
             }
         }
