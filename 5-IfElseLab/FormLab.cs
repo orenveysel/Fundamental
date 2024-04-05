@@ -25,7 +25,7 @@ namespace _5_IfElseLab
 
         private void FormLab_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void kontrol_Click(object sender, EventArgs e)
@@ -35,11 +35,11 @@ namespace _5_IfElseLab
             // Eger girilen textbox icerisindeki deger integer'a cevirildi mi kontrolu
             if (durum && sayi >= 0 && sayi <= 24) // true
             {
-                if(sayi>=4 && sayi<11)
+                if (sayi >= 4 && sayi < 11)
                 {
                     lblMesaj.Text = "Sabah";
                 }
-                else if(sayi>=11 && sayi<14)
+                else if (sayi >= 11 && sayi < 14)
                 {
                     lblMesaj.Text = "Öğlen";
                 }
@@ -62,5 +62,40 @@ namespace _5_IfElseLab
                 girdi.Text = "";
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sayi;
+            bool durum = int.TryParse(girdi.Text, out sayi);
+            // Eger girilen textbox icerisindeki deger integer'a cevirildi mi kontrolu
+            if (durum && sayi >= 0 && sayi <= 24) // true
+            {
+                switch (sayi)
+                {
+                    case int n when (n >= 4 && n < 11):
+                        lblMesaj.Text = $"{n} Sabah";
+                        break;
+                    case int n when (n >= 11 && n < 14):
+                        lblMesaj.Text = $"{n} Oglen";
+                        break;
+                    case int n when (n >= 14 && n < 19):
+                        lblMesaj.Text = $"{n} İkindi";
+                        break;
+                    case int n when (n >= 19 && n < 22):
+                        lblMesaj.Text = $"{n} Aksam";
+                        break;
+                    default:
+                        lblMesaj.Text = "Gece";
+                        break;
+                }
+            }
+            else
+            {
+                lblMesaj.Text = "Hatalı veri girişi! Lütfen 0-24 aralığında bir sayı giriniz.";
+                girdi.Text = "";
+            }
+        }
+
     }
 }
+

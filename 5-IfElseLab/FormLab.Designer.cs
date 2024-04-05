@@ -32,6 +32,7 @@
             this.kontrol = new System.Windows.Forms.Button();
             this.lblMesaj = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // girdi
@@ -69,11 +70,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "0-24 arasi bir sayi giriniz:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(672, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(182, 105);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Kontrol 2";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMesaj);
             this.Controls.Add(this.kontrol);
@@ -92,5 +104,6 @@
         private System.Windows.Forms.Button kontrol;
         private System.Windows.Forms.Label lblMesaj;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
