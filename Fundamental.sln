@@ -13,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-ifAtYarisi", "4-ifAtYaris
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-IfElseLab", "5-IfElseLab\5-IfElseLab.csproj", "{D6C11E7B-0C23-4AB7-AB8F-E6F57DCD632B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-Try-Catch", "6-Try-Catch\6-Try-Catch.csproj", "{955F74E0-41BE-489D-BE16-12B207C3996D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-Try-Catch", "6-Try-Catch\6-Try-Catch.csproj", "{955F74E0-41BE-489D-BE16-12B207C3996D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-DongulerDoWhile", "DongulerDoWhile\7-DongulerDoWhile.csproj", "{27562BD2-0E77-4619-8FD3-B2BC829F6023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{955F74E0-41BE-489D-BE16-12B207C3996D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{955F74E0-41BE-489D-BE16-12B207C3996D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{955F74E0-41BE-489D-BE16-12B207C3996D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27562BD2-0E77-4619-8FD3-B2BC829F6023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27562BD2-0E77-4619-8FD3-B2BC829F6023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27562BD2-0E77-4619-8FD3-B2BC829F6023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27562BD2-0E77-4619-8FD3-B2BC829F6023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

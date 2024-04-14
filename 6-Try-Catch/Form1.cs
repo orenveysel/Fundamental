@@ -126,18 +126,15 @@ namespace _6_Try_Catch
             catch (FormatException ex)
             {
                 MessageBox.Show("Lutfen Sayi Giriniz");
-
             }
             catch (DivideByZeroException ex)
             {
                 MessageBox.Show("Sifira Bolme Hatasi Olustu. Lutfen 0 Girmeyiniz");
-
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
             try
             {
                 int gelenDeger = Convert.ToInt32(textBox1.Text);
@@ -145,22 +142,18 @@ namespace _6_Try_Catch
             }
             catch (FormatException hata) // Format Hatasi
             {
-
                 throw new Exception("Girilen deger integer tipinde degildir..");
             }
             catch (DivideByZeroException hata) // Sifira bolme Hatasi
             {
-
                 throw new Exception("Sifira Bolme hatasi:" + hata.Source);
             }
             catch (OverflowException hata) // Taþma hatasi
             {
-
                 throw new Exception(hata.Message);
             }
             catch (Exception hata) // Burasi gelen butun hatalari yakalar
             {
-
                 throw new Exception(hata.Message);
             }
             finally // Burasi en son yapilmasi gereken isler icin kullanilir
