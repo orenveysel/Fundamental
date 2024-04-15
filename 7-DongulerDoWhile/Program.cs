@@ -184,19 +184,19 @@
             #endregion
 
             #region Kulanicinin girdigi kelimeyi kullanicinin istedigi kadar tekrar eden dongu
-            int sayac = 0;
+            //int sayac = 0;
 
-            Console.WriteLine("Bir kelime giriniz: ");
-            string kelime = Console.ReadLine();
+            //Console.WriteLine("Bir kelime giriniz: ");
+            //string kelime = Console.ReadLine();
 
-            Console.WriteLine("Kac kere tekrar edilecek? ");
-            sayac = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Kac kere tekrar edilecek? ");
+            //sayac = int.Parse(Console.ReadLine());
 
-            do
-            {
-                Console.WriteLine(kelime);
-                sayac--;
-            }while(sayac > 0);
+            //do
+            //{
+            //    Console.WriteLine(kelime);
+            //    sayac--;
+            //}while(sayac > 0);
 
             #endregion
 
