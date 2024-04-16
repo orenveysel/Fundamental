@@ -61,15 +61,15 @@ namespace _13_ArraySinifiVeListeler
 
             #region ArrayList
 
-            ArrayList arrayList = new ArrayList();
-            arrayList.Add(3); // integer
-            arrayList.Add("Ali"); // string
-            arrayList.Add(DateTime.Now); // dateTime
+            //ArrayList arrayList = new ArrayList();
+            //arrayList.Add(3); // integer
+            //arrayList.Add("Ali"); // string
+            //arrayList.Add(DateTime.Now); // dateTime
 
-            for (int i = 0; i < arrayList.Count; i++)
-            {
-                Console.WriteLine(arrayList[i]);
-            }
+            //for (int i = 0; i < arrayList.Count; i++)
+            //{
+            //    Console.WriteLine(arrayList[i]);
+            //}
 
             #endregion
 
