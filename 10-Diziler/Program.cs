@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-
             // Bir siniftaki ogrencilerin notlarini tutacak degiskenleri tanımlayiniz
             // Sinif 5 kisidir.. Asagidaki kod hammaliye kodudur
             int ogrenci1, ogrenci2, ogrenci3, ogrenci4, ogrenci5 = 0;
@@ -67,8 +66,6 @@
             DateTime[] dogumGunleri = new DateTime[10];
 
             #endregion
-
-
 
             Console.WriteLine("Hello, World!");
         }
