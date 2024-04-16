@@ -162,23 +162,6 @@ namespace _8_ForDongusu
 
             listBox1.Items.Add(sonuc);
         }
-        // 1-  0-100 arasindaki üçe  ve yediye bölünenlerin toplamini ekrana yaziniz
-        // 2-  Klavyeden girilen  sayiya kadar olan fibanocci sayilarini listeleyiniz
-        // 3-  Klavyeden girilen sayini basamaklarini while ile bulunuz
-        // 4-  do-while ile ekrandan 0 girilene kadar sayi okutan donguyu yapiniz.
-        // 5- kullanicidan sayi istenecek.Girilen sayi toplami 100 veya uzeri olana kadar sayi girmeye devam ettirecek dongu
-        // 6- Kullanicidan alinan iki sayi arasindaki sayilarin kare ve küp toplamlarini hesaplayin.
-        //                 Kurallar : i--girilen sayilarin birincisi kucuk, ikincisi buyuk olabilir.
-        //                            veya birinci buyuk ikinci kucuk olacak sekilde siraya bagli kalmaksizin veri girebilir. 
-        //                           ii- kullanicin girdigi degerlerin sayi olup olmadigi kontrol edip ekrana uygun mesaj verilecek. VE girilen deger yeniden istenecek
-        //                           iii- Girilen degerler ekrana 3 kolon seklinde basilacak.
-        //                                Sayi Karesi  Küpü
-        //                            iV- Devam etmek istiyormusunuz sorusu sorulacak.Evet derse program devam edecek.Programi sonlandirmak icin hayir yazilacak.
-        //7-  Bilgisayarin tutugu bir sayiyi tahmin eden oyun.
-        //                 Kurallar : Tutlan sayi Araligi 1-100 arasinda olacak.
-        //                 Tahmin hakkini ekran dan alin.Girilen tahmin hakki ladar ekrandan deger okutun.
-        //                 Kullanici yi yönlendirin.Buyuk yada kucuktur diye. Musteri kacmasin .
-
-        //            Devam etmek istiyormusunuz sorusu sorulacak.Evet derse program devam edecek.Programi sonlandirmak icin hayir yazilacak.
     }
 }
+
