@@ -78,29 +78,30 @@
 
             #region Dizideki en buyuk ve en kucuk elemani bulma
 
-            int[] sayilar = { 1, 12, 3, 9, 4, 21, 0, 49, 32 };
-            int enBuyuk, enKucuk;
-            enBuyuk = 0;
-            enKucuk = sayilar[0];
-            for (int i = 0; i < sayilar.Length; i++)
-            {
-                if (sayilar[i] > enBuyuk)
-                {
-                    enBuyuk = sayilar[i];
-                }
-                if (enKucuk > sayilar[i])
-                {
-                    enKucuk = sayilar[i];
-                }
-            }
-            Console.WriteLine($"En buyuk eleman: {enBuyuk}, en kucuk eleman: {enKucuk}");
+            //int[] sayilar = { 1, 12, 3, 9, 4, 21, 0, 49, 32 };
+            //int enBuyuk, enKucuk;
+            //enBuyuk = 0;
+            //enKucuk = sayilar[0];
+            //for (int i = 0; i < sayilar.Length; i++)
+            //{
+            //    if (sayilar[i] > enBuyuk)
+            //    {
+            //        enBuyuk = sayilar[i];
+            //    }
+            //    if (enKucuk > sayilar[i])
+            //    {
+            //        enKucuk = sayilar[i];
+            //    }
+            //}
+            //Console.WriteLine($"En buyuk eleman: {enBuyuk}, en kucuk eleman: {enKucuk}");
 
-            // Kolay yolu
-            sayilar.Max();
-            sayilar.Min();
-            Console.WriteLine($"En buyuk eleman: {sayilar.Max()}, en kucuk eleman: {sayilar.Min()}");
+            //// Kolay yolu
+            //sayilar.Max();
+            //sayilar.Min();
+            //Console.WriteLine($"En buyuk eleman: {sayilar.Max()}, en kucuk eleman: {sayilar.Min()}");
 
             #endregion
+
             Console.WriteLine("Hello, World!");
         }
     }
