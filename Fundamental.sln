@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-ArraySinifiVeListeler", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-ListelerLab", "14-ListelerLab\14-ListelerLab.csproj", "{97747E96-DBC5-4454-888A-56B69E30A77A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-HazirMetodlar", "15-HazirMetodlar\15-HazirMetodlar.csproj", "{171A81AC-E7A1-4B3B-B487-F823E7F8BDEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{97747E96-DBC5-4454-888A-56B69E30A77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97747E96-DBC5-4454-888A-56B69E30A77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97747E96-DBC5-4454-888A-56B69E30A77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171A81AC-E7A1-4B3B-B487-F823E7F8BDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171A81AC-E7A1-4B3B-B487-F823E7F8BDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171A81AC-E7A1-4B3B-B487-F823E7F8BDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171A81AC-E7A1-4B3B-B487-F823E7F8BDEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
