@@ -1,4 +1,6 @@
-﻿namespace _15_HazirMetodlar
+﻿using System.Text.RegularExpressions;
+
+namespace _15_HazirMetodlar
 {
     internal class Program
     {
@@ -150,18 +152,30 @@
 
             // Verilen kelime ya da karakteri elindeki string icerisinde arar bulur ve degistirir
 
-            //var yeniCumle = cumle.Replace("dans","*****");
-            //Console.WriteLine(yeniCumle);
+            var yeniCumle = cumle.Replace("dans", "*****");
+            Console.WriteLine(yeniCumle);
 
             // *****ODEV****** Cumle icerisinde asagidaki blaclist icerisindeki kelimeler yerine **** bastirilsin
 
-            //List<string> blacklist = new List<string>();
-            //blacklist.Add("bar");
-            //blacklist.Add("dans");
-            //blacklist.Add("pastane");
-            //blacklist.Add("gazino");
-            //blacklist.Add("pavyon");
-            //blacklist.Add("taverna");
+            List<string> blacklist = new List<string>();
+            blacklist.Add("bar");
+            blacklist.Add("dans");
+            blacklist.Add("pastane");
+            blacklist.Add("gazino");
+            blacklist.Add("pavyon");
+            blacklist.Add("taverna");
+
+            string[] kelimeler = cumle.Split(' ', '.', ',', '!', '?', ':', ';');
+
+            foreach (string kelime in kelimeler)
+            {
+                string yeniKelime = kelime;
+                if (blacklist.Contains(kelime.ToLower()))
+                {
+                    yeniKelime = new string("******");
+                }
+                Console.Write(yeniKelime + " ");
+            }
 
             #endregion
 
@@ -188,7 +202,7 @@
 
             #region Char islemleri
 
-            char ch = 'A';
+            //char ch = 'A';
             //Console.WriteLine(Char.IsLower(ch)); // Kucuk harf olup olmadigini kontrol eder
             //Console.WriteLine(Char.IsUpper(ch)); // Buyuk harf olup olmadigini kontrol eder
 
@@ -197,22 +211,48 @@
             //Console.WriteLine(Char.IsWhiteSpace(ch)); // Bosluk olup olmadigini kontrol eder
 
             // string ifadeler aslinda char dizisidir. Foreach ile donulebilir
-            foreach (char c in cumle)
-            {
-                Console.WriteLine(c);
-            }
+
+            //foreach (char c in cumle)
+            //{
+            //    Console.WriteLine(c);
+            //}
 
             #endregion
 
             #region Odevler
-            string kod = "Kasa-001";
-            // Odev elimizdeki kodu "Kasa-002" seklinde yazmak 
 
-            string kizlikSoyadi = "Demir";
+            // Odev elimizdeki kodu "Kasa-002" seklinde yazmak isdigit + isnumber kullanilabilir
+
+            //string kod = "Kasa-001";
+            //int sayi = 0;
+            //string sayiString = "";
+            //foreach (char c in kod)
+            //{
+            //    if (Char.IsNumber(c))
+            //    {
+            //        Console.WriteLine(c);
+            //        sayiString += c;
+            //    }
+            //}
+            //sayi = int.Parse(sayiString) + 1;
+            //string yeniKod = kod.Substring(0, kod.Length - sayiString.Length) + sayi.ToString("D" + sayiString.Length);
+            //Console.WriteLine(yeniKod);
+
             // Ekran Ciktisi *e*i* seklinde yazdiralim
 
-            string tcno = "12345678912";
-            // TcNo'nun son 4 hanesini ekrana yazdirin 
+            //string kizlikSoyadi = "Demir";
+            //var yeniCumle = kizlikSoyadi.Replace(kizlikSoyadi[0], '*')
+            //    .Replace(kizlikSoyadi[2], '*')
+            //    .Replace(kizlikSoyadi[4], '*');
+            //Console.WriteLine(yeniCumle);
+
+
+            // TcNo'nun son 4 hanesini ekrana yazdirin
+
+            //string tcno = "12345678912";
+            //string substr = tcno.Substring((tcno.Length - 4), 4);
+            //Console.WriteLine(substr);
+
             #endregion
 
             #endregion
@@ -221,7 +261,6 @@
 
             #endregion
 
-            Console.WriteLine("Hello, World!");
         }
     }
 }
