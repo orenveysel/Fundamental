@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using Bogus;
+using System.Text.RegularExpressions;
 
 namespace _15_HazirMetodlar
 {
@@ -54,11 +55,11 @@ namespace _15_HazirMetodlar
             // Elimizdeki metinsel degerleri manipulasyonunda hazir olarak kullanacagimiz bir cok metod
             // .NET altyapisinde mevcuttur
 
-            string cumle = "Buna göre kahvehane, kafeterya, pastane, hazır yemek şirketleri dahil lokantalarda " +
-                "KDV oranı yüzde 8'den yüzde 10'a çıkacak. Gazino, bar, dans salonu, pavyon, taverna, birahane " +
-                "gibi yerlerde verilen hizmetlere uygulanan KDV oranı da yüzde 18'den yüzde 20'ye yükseltilecek. " +
-                "Tebliğ taslağı görüşlerin alınmasının ardından Resmi Gazete'de yayınlandığı tarihte yürürlüğe " +
-                "girecek.";
+            //string cumle = "Buna göre kahvehane, kafeterya, pastane, hazır yemek şirketleri dahil lokantalarda " +
+            //    "KDV oranı yüzde 8'den yüzde 10'a çıkacak. Gazino, bar, dans salonu, pavyon, taverna, birahane " +
+            //    "gibi yerlerde verilen hizmetlere uygulanan KDV oranı da yüzde 18'den yüzde 20'ye yükseltilecek. " +
+            //    "Tebliğ taslağı görüşlerin alınmasının ardından Resmi Gazete'de yayınlandığı tarihte yürürlüğe " +
+            //    "girecek.";
 
             #region CompareTo
 
@@ -152,30 +153,30 @@ namespace _15_HazirMetodlar
 
             // Verilen kelime ya da karakteri elindeki string icerisinde arar bulur ve degistirir
 
-            var yeniCumle = cumle.Replace("dans", "*****");
-            Console.WriteLine(yeniCumle);
+            //var yeniCumle = cumle.Replace("dans", "*****");
+            //Console.WriteLine(yeniCumle);
 
             // *****ODEV****** Cumle icerisinde asagidaki blaclist icerisindeki kelimeler yerine **** bastirilsin
 
-            List<string> blacklist = new List<string>();
-            blacklist.Add("bar");
-            blacklist.Add("dans");
-            blacklist.Add("pastane");
-            blacklist.Add("gazino");
-            blacklist.Add("pavyon");
-            blacklist.Add("taverna");
+            //List<string> blacklist = new List<string>();
+            //blacklist.Add("bar");
+            //blacklist.Add("dans");
+            //blacklist.Add("pastane");
+            //blacklist.Add("gazino");
+            //blacklist.Add("pavyon");
+            //blacklist.Add("taverna");
 
-            string[] kelimeler = cumle.Split(' ', '.', ',', '!', '?', ':', ';');
+            //string[] kelimeler = cumle.Split(' ', '.', ',', '!', '?', ':', ';');
 
-            foreach (string kelime in kelimeler)
-            {
-                string yeniKelime = kelime;
-                if (blacklist.Contains(kelime.ToLower()))
-                {
-                    yeniKelime = new string("******");
-                }
-                Console.Write(yeniKelime + " ");
-            }
+            //foreach (string kelime in kelimeler)
+            //{
+            //    string yeniKelime = kelime;
+            //    if (blacklist.Contains(kelime.ToLower()))
+            //    {
+            //        yeniKelime = new string("******");
+            //    }
+            //    Console.Write(yeniKelime + " ");
+            //}
 
             #endregion
 
@@ -259,8 +260,168 @@ namespace _15_HazirMetodlar
 
             #region DateTime metodlari
 
+            // DATETIME => Zamanla ilgili yapabileceginiz tum islemleri ve tum verileri size teslim eden nesnemizdir...
+
+            // Bulundugumuz ani veren metod
+
+            //Console.WriteLine(DateTime.Now);
+            //Console.WriteLine(DateTime.UtcNow);
+            //Console.WriteLine(DateTime.Now.ToLongDateString()); // Ay ve Gun isimlerini verir
+            //Console.WriteLine(DateTime.Now.ToLongTimeString()); // Zamani verir
+            //Console.WriteLine(DateTime.Now.DayOfWeek); // Haftanin gununu verir
+            //Console.WriteLine(DateTime.Now.DayOfYear); // Yilin gununu verir
+
+            // Artik yil
+
+            //Console.WriteLine(DateTime.IsLeapYear(2024)==true?"2024 Subat ayi 29 gundur":"2021 Subat ayi 28 gundur");
+
+            // Iki zaman dilimi arasindaki fark
+
+            //DateTime dtrh = new DateTime(1999, 3, 31);
+            //DateTime bugun = DateTime.Now;
+
+            //TimeSpan zamanfarki = bugun - dtrh;
+            //Console.WriteLine("Omer Faruk");
+            //Console.WriteLine(zamanfarki.TotalDays + " gundur yasıyor");
+            //Console.WriteLine(zamanfarki.TotalHours + " saattir yasıyor");
+
+            //for (long i = 0; i < 1000000000; i++)
+            //{
+
+            //}
+
+            //DateTime suan = DateTime.Now;
+
+            //zamanfarki = suan - bugun;
+            //Console.WriteLine($"Dongu suresi: {zamanfarki.TotalMilliseconds} milisaniyedir");
+
             #endregion
 
+            #region File Create
+
+            //List<string> isimler = new List<string>();
+            //List<string> sehirler = new List<string>();
+            //List<string> emails = new List<string>();
+
+            //Faker faker = new Faker("tr");
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    isimler.Add(faker.Name.FullName());
+            //    sehirler.Add(faker.Address.City());
+            //    emails.Add(faker.Person.Email);
+            //}
+
+            // Dosya olusturmak icin
+            #region Escape Karakterler
+            //\' – Output a Single quote.
+            //\” – Output a double quote.
+            //\ – Output a Backslash.
+            //\n – Insert a newline.
+            //\r – Insert a carriage -return.
+            //\t – Insert a tab.
+            //\0 – Insert a null character.
+            //\b – Insert a backspace. 
+            #endregion
+
+            //FileStream writer = File.Create("Kisiler2.csv"); // Dosya olusturmaya yarar
+            //StreamWriter streamWriter = new StreamWriter(writer); // Hafizadaki bilgiyi dosyaya yazdirir
+
+            //streamWriter.WriteLine("Ad Soyad\tSehir\tEmail"); // 
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    streamWriter.WriteLine($"{isimler[i].ToString()};{sehirler[i].ToString()};{emails[i].ToString()}");
+            //}
+            //streamWriter.Close();
+            //streamWriter.Dispose();
+            //writer.Close();
+            #endregion
+
+            #region File Read
+            //string fileName = "Kisiler2.csv";
+            //FileStream fs;
+            //StreamReader sr;
+            //try
+            //{
+            //    if (File.Exists(fileName))
+            //    {
+            //        fs = File.OpenRead(fileName);
+            //        sr = new StreamReader(fs);
+
+            //        string satir = "";
+            //        int sayac = 0;
+            //        while ((satir = sr.ReadLine()) != null)
+            //        {
+            //            string[] alanlar = satir.Split(";");
+            //            if (sayac > 0)
+            //            {
+            //                Console.WriteLine($" {alanlar[0]}\t{alanlar[1]}\t{alanlar[2]}");
+            //            }
+            //            sayac++;
+            //        }
+            //        sr.Close();
+            //        fs.Close();
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Dosya Mevcut Degildir");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.ToString());
+            //}
+            //finally
+            //{
+            //    // sr.Close();
+            //}
+
+            #endregion
+
+            string fileName = "SampleFile.csv";
+            FileStream fs;
+            StreamReader sr;
+            try
+            {
+                if (File.Exists(fileName))
+                {
+                    fs = File.OpenRead(fileName);
+                    sr = new StreamReader(fs);
+
+                    string satir = "";
+                    int sayac = 0;
+                    while ((satir = sr.ReadLine()) != null)
+                    {
+                        string[] alanlar = satir.Split(",");
+                        if (sayac > 0)
+                        {
+                            Console.WriteLine($"{alanlar[0]}\t{alanlar[1]}\t{alanlar[2]}\t{alanlar[3]}\t{alanlar[4]}\t{alanlar[5]}\t{alanlar[6]}");
+                        }
+                        sayac++;
+                    }
+                    sr.Close();
+                    fs.Close();
+                }
+                else
+                {
+                    Console.WriteLine("Dosya Mevcut Degildir");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                // sr.Close();
+            }
+
+        }
+        public static void Beklet()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+
+            }
         }
     }
 }
