@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14-ListelerLab", "14-Listel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15-HazirMetodlar", "15-HazirMetodlar\15-HazirMetodlar.csproj", "{171A81AC-E7A1-4B3B-B487-F823E7F8BDEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-FileIslemleri", "16-FileIslemleri\16-FileIslemleri.csproj", "{8E0839DF-E010-4CBB-BA83-C15676D97EB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16-FileIslemleri", "16-FileIslemleri\16-FileIslemleri.csproj", "{8E0839DF-E010-4CBB-BA83-C15676D97EB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-FileIslemleriLab", "17-FileIslemleriLab\17-FileIslemleriLab.csproj", "{87B09BB9-4662-4FBF-B236-3C723AB37840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{8E0839DF-E010-4CBB-BA83-C15676D97EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E0839DF-E010-4CBB-BA83-C15676D97EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E0839DF-E010-4CBB-BA83-C15676D97EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B09BB9-4662-4FBF-B236-3C723AB37840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B09BB9-4662-4FBF-B236-3C723AB37840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B09BB9-4662-4FBF-B236-3C723AB37840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B09BB9-4662-4FBF-B236-3C723AB37840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
