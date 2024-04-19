@@ -18,11 +18,11 @@ namespace _22_SystemIO
 
                 if (drive.IsReady)
                 {
-                    listBox1.Items.Add("Surucu Adi: " + drive.Name);
-                    listBox1.Items.Add("Bos Alan: " + drive.TotalFreeSpace);
-                    listBox1.Items.Add("Toplam Adi: " + drive.TotalSize);
-                    listBox1.Items.Add("Tanimli On Adi: " + drive.VolumeLabel);
-                    listBox1.Items.Add("Formatlanma Tipi: " + drive.DriveFormat);
+                    listBox1.Items.Add("Surucu Adi:" + drive.Name);
+                    listBox1.Items.Add("Bos Alan :" + drive.TotalFreeSpace);
+                    listBox1.Items.Add("Toplam Alan :" + drive.TotalSize);
+                    listBox1.Items.Add("Tanimli On Adi:" + drive.VolumeLabel);
+                    listBox1.Items.Add("Formatlanma Tipi:" + drive.DriveFormat);
 
                 }
             }
@@ -31,13 +31,14 @@ namespace _22_SystemIO
         private void button2_Click(object sender, EventArgs e)
         {
             // Klasorler ile ilgili islemler yapmaya yarar
-            string path = @"C:\";
-            if (Directory.Exists(path)) // Klasor varsa
+            string path = @"c:\";
+            if (Directory.Exists(path)) // Klasor var ise
             {
-                var Klasorler = Directory.GetDirectories(path);
+                var klasorler = Directory.GetDirectories(path);
 
-                foreach (var dir in Klasorler)
+                foreach (var dir in klasorler)
                 {
+
                     listBox2.Items.Add(dir);
                 }
             }

@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-LibraryKullanma", "21-Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-SystemIO", "22-SystemIO\22-SystemIO.csproj", "{6B9F196A-CAFC-44DD-8724-7630F3C62548}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23-VeriGirisEkrani", "23-VeriGirisEkrani\23-VeriGirisEkrani.csproj", "{4A9BE563-C03D-4509-8EE7-C2D3F6D7ED9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{6B9F196A-CAFC-44DD-8724-7630F3C62548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B9F196A-CAFC-44DD-8724-7630F3C62548}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B9F196A-CAFC-44DD-8724-7630F3C62548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9BE563-C03D-4509-8EE7-C2D3F6D7ED9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9BE563-C03D-4509-8EE7-C2D3F6D7ED9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9BE563-C03D-4509-8EE7-C2D3F6D7ED9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9BE563-C03D-4509-8EE7-C2D3F6D7ED9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
