@@ -48,16 +48,9 @@
             long faktoryel = FaktoryelRecursive(3);
             #endregion
 
-            #region Odevler
-            // 1-Verilen sayinin mutlak degerini alan metod
-            // 2-Verilen sayinin ikinci verilen sayiya gore üssünü alan metod
-
-            // 3-katsayilari verilen ikinci derece denklemin koklerini yazdiran motod.
-            // b2-4ac 
-
-            #endregion
             Console.WriteLine("Hello, World!");
         }
+
         // Kendi Kendisini Cagiran Metodlar => Recursive metodlar
         public static long FaktoryelRecursive(int sayi)
         {
@@ -91,8 +84,6 @@
             }
             sayidizisi = yeniDizi;
         }
-
-
 
         // int.TryParse() kendimiz yazalim 
         public static bool SayiCevir(string str, out int deger)
