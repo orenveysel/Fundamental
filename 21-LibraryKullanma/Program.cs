@@ -1,5 +1,4 @@
 ﻿using _20_MyLibrary;
-using 
 namespace _21_LibraryKullanma
 {
     internal class Program
